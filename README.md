@@ -275,7 +275,8 @@ export SPARK_HOME=/opt/spark
 export PATH=$PATH:$SPARK_HOME/bin
 
 export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native:$LD_LIBRARY_PATH
-``
+```
+
 
 ![Hadoop 6](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/2be5a03c-0ecd-4f52-bd83-e07619d8b61a)
 
