@@ -79,13 +79,13 @@ pip install paho-mqtt
 Ce guide vous aidera à installer et démarrer Apache Kafka.
 
 **Étape 1 :** Extraction de Kafka
-Après avoir téléchargé la dernière version de Kafka depuis le [site officiel](https://www.apache.org/dyn/closer.cgi?path=/kafka/3.7.0/kafka_2.13-3.7.0.tgz), extrayez le contenu du fichier tar.gz en utilisant la commande suivante :
+Après avoir téléchargé la dernière version de Kafka depuis le [site officiel](https://dlcdn.apache.org/kafka/3.9.0/kafka_2.12-3.9.0.tgz), extrayez le contenu du fichier tar.gz en utilisant la commande suivante :
 ```bash
-tar -xzf kafka_2.13-3.6.1.tgz
+tar -xzf kafka_2.12-3.9.0.tgz
 ```
 Ensuite, accédez au répertoire de Kafka :
 ```bash
-cd kafka_2.13-3.6.1
+cd kafka_2.13-3.9.0
 ```
 
 ![KAFKA 1](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/ef6716a3-9b5d-4cd9-8f3a-dea68c8802bf)
