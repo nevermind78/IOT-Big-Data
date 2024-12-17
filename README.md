@@ -319,18 +319,18 @@ sudo apt-get update
 **Étape 2 :** Télécharger Apache Spark 
 Accédez au site officiel d'[Apache Spark](https://spark.apache.org/downloads.html) et téléchargez la dernière version stable d'Apache Spark en sélectionnant le package approprié pour votre système. Vous pouvez utiliser la commande wget pour télécharger le package directement depuis le terminal.
 ```bash
-wget https://dlcdn.apache.org/spark/spark-3.4.0/spark-3.4.0-bin-hadoop3.tgz
+wget https://dlcdn.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz
 ```
 
 **Étape 3 :** Extraire le package Apache Spark
 Une fois le téléchargement terminé, extrayez le package en utilisant la commande tar :
 ```bash
-tar xvf spark-3.4.0-bin-hadoop3.tgz
+tar xvf spark-3.5.3-bin-hadoop3.tgz
 ```
 **Étape 4 :** Déplacer le répertoire Spark
 Déplacez le répertoire Spark extrait vers l'emplacement souhaité, tel que `/opt` :
 ```bash
-sudo mv spark-3.4.0-bin-hadoop3 /opt/spark
+sudo mv spark-3.5.3-bin-hadoop3 /opt/spark
 ```
 **Étape 5 :** Configurer les variables d'environnement
 Pour garantir que Apache Spark sur Ubuntu est accessible de n'importe où sur votre système, vous devez configurer les variables d'environnement nécessaires. Ouvrez le fichier `.bashrc` à l'aide d'un éditeur de texte :
