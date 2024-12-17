@@ -126,20 +126,20 @@ java -version
 **Étape 2 :** Téléchargement de Cassandra
 Téléchargez la dernière version de [Cassandra](https://cassandra.apache.org/_/download.html) à l'aide de 'curl' :
 ```bash
-curl -OL https://dlcdn.apache.org/cassandra/4.1.3/apache-cassandra-4.1.3-bin.tar.gz
+curl -OL https://dlcdn.apache.org/cassandra/4.1.7/apache-cassandra-4.1.7-bin.tar.gz
 ```
 ![Cassandra 3](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/fce42517-396c-488a-8742-7a2e1c0ad71b)
 
 **Étape 3 :** Vérification de l'intégrité du téléchargement
 Vérifiez l'intégrité du fichier téléchargé avec :
 ```bash
-gpg --print-md SHA256 apache-cassandra-4.1.3-bin.tar.gz
+gpg --print-md SHA256 apache-cassandra-4.1.7-bin.tar.gz
 ```
 ![Cassandra 4](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/f7449822-b792-4cb4-92c6-52a7e7d291ab)
 
 Téléchargez le fichier de signature SHA256 et vérifiez-le avec :
 ```bash
-curl -L https://downloads.apache.org/cassandra/4.1.3/apache-cassandra-4.1.3-bin.tar.gz.sha256
+curl -L https://downloads.apache.org/cassandra/4.1.3/apache-cassandra-4.1.7-bin.tar.gz.sha256
 ```
 ![Cassandra 5](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/75166060-3569-48ce-92bd-2dc3aefade07)
 
@@ -147,7 +147,7 @@ curl -L https://downloads.apache.org/cassandra/4.1.3/apache-cassandra-4.1.3-bin.
 **Étape 4 :** Extraction de l'archive Cassandra
 Extrayez Cassandra avec :
 ```bash
-tar xzvf apache-cassandra-4.1.3-bin.tar.gz
+tar xzvf apache-cassandra-4.1.7-bin.tar.gz
 ```
 ![Cassandra 6](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/c09da049-2189-49df-ac09-20e9da200bed)
 
@@ -155,7 +155,7 @@ tar xzvf apache-cassandra-4.1.3-bin.tar.gz
 **Étape 5 :** Démarrage de Cassandra
 Accédez au répertoire de Cassandra et démarrez le serveur :
 ```bash
-cd apache-cassandra-4.1.3 && bin/cassandra
+cd apache-cassandra-4.1.7 && bin/cassandra
 ```
 ![Cassandra 7](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/16d9658f-99ab-4f83-89e9-0d3295322947)
 
