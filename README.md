@@ -28,7 +28,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
-
+Installer vscode ![lien](https://vscode.download.prss.microsoft.com/dbazure/download/stable/138f619c86f1199955d53b4166bef66ef252935c/code_1.96.0-1733888194_amd64.deb)
 ### MQTT :
 Ce guide explique comment installer le broker MQTT Mosquitto sur Ubuntu.
 
