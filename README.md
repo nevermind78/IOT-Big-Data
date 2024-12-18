@@ -179,19 +179,15 @@ Installez les paquets nécessaires pour ajouter un nouveau référentiel sur vot
 ```bash
 sudo apt install software-properties-common gnupg apt-transport-https ca-certificates -y
 ```
-![MongoDB 1](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/2fdbeffd-8481-4458-b5cb-f087931f19fc)
-![MongoDB 2](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/8da1aa37-c6f3-497a-9932-b24f7d183c25)
+
 
 **Étape 2 :** Ajout du référentiel MongoDB
+
 Ajoutez la clé GPG officielle de MongoDB :
 ```bash
-curl -fsSL https://www.mongodb.com/server-7.0.asc | sudo gpg --dearmor -o /usr/share/keyrings/mongodb-server-7.0.gpg
-```
-Ajoutez le référentiel de MongoDB à votre système :
-```bash
+curl -fsSL https://downloads.mongodb.com/secure/rpm/7.0/mongodb-server-7.0.asc | sudo gpg --dearmor -o /usr/share/keyrings/mongodb-server-7.0.gpg
 echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 ```
-![MongoDB 3](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/e69f0003-2fb5-49b1-a281-e38eac7d6e61)
 
 **Étape 3 :** Mise à jour de la liste des paquets
 Mettez à jour la liste des paquets pour inclure les paquets de MongoDB :
