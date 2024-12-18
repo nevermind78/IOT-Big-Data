@@ -303,8 +303,24 @@ Mettez à jour le fichier .bashrc pour prendre en compte les nouvelles variables
 
 ![Hadoop 7](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/8decb0b0-d00a-4331-a486-f1dcfeec897e)
 
-Ajoutez le chemin d'accès à Java dans le fichier de configuration Hadoop.
+Ajoutez le chemin d'accès à Java dans le fichier de configuration `hadoop-env.sh`.
+qui se trouve dans `~/hadoop/etc/hadoop`
 
+```bash
+###
+
+# Technically, the only required environment variable is JAVA_HOME.
+# All others are optional.  However, the defaults are probably not
+# preferred.  Many sites configure these options outside of Hadoop,
+# such as in /etc/profile.d
+
+# The java implementation to use. By default, this environment
+# variable is REQUIRED on ALL platforms except OS X!
+# export JAVA_HOME=
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+# The language environment in which Hadoop runs. Use the English
+# environment to ensure that logs are printed as expected.
+```
 ![Hadoop 8](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/1a198cd3-a65c-4eb2-bb88-c6db87516932)
 
 **Étape 6 :** Configuration du système de fichiers HDFS
