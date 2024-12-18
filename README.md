@@ -258,6 +258,26 @@ Testez la connexion SSH vers vous-même pour vérifier que l'authentification sa
 
 ```ssh localhost```
 
+Modifiez le fichier de configuration SSH pour autoriser l'authentification par clé publique :
+
+
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+Recherchez et assurez-vous que les lignes suivantes sont activées (sans #) :
+
+``bash
+
+PubkeyAuthentication yes
+PasswordAuthentication yes
+PermitRootLogin prohibit-password
+```
+
+Ensuite, redémarrez le service SSH :
+
+```bash
+sudo service ssh restart
+```
 
 **Étape 2 :** Création d'un utilisateur Hadoop
 Créez un utilisateur spécifique pour Hadoop et configurez les informations d'utilisateur nécessaires.
