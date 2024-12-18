@@ -266,7 +266,7 @@ sudo nano /etc/ssh/sshd_config
 ```
 Recherchez et assurez-vous que les lignes suivantes sont activées (sans #) :
 
-``bash
+```bash
 
 PubkeyAuthentication yes
 PasswordAuthentication yes
