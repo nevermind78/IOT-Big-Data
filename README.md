@@ -233,6 +233,34 @@ Vérifiez que Java est correctement installé et configuré sur votre système.
 
 ![Hadoop 2](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/177ba3c4-be48-4c95-b33c-7f92fc052f52)
 
+1. Configurer SSH pour Hadoop
+
+Hadoop nécessite que SSH soit configuré pour se connecter à votre machine locale sans mot de passe.
+a. Vérifier si le serveur SSH est installé
+
+    Assurez-vous que le serveur SSH est installé :
+
+```sudo apt-get install openssh-server``
+
+Ensuite, démarrez le service :
+
+```sudo service ssh start```
+
+b. Configurer l'authentification sans mot de passe
+
+    Générez une clé SSH si ce n'est pas déjà fait :
+
+``ssh-keygen -t rsa -P "" -f ~/.ssh/id_rsa``
+
+Ajoutez la clé publique à la liste des hôtes autorisés :
+
+```cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys``
+```chmod 600 ~/.ssh/authorized_keys```
+
+Testez la connexion SSH vers vous-même pour vérifier que l'authentification sans mot de passe fonctionne :
+
+```ssh localhost```
+
 
 **Étape 2 :** Création d'un utilisateur Hadoop
 Créez un utilisateur spécifique pour Hadoop et configurez les informations d'utilisateur nécessaires.
