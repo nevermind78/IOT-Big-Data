@@ -341,7 +341,7 @@ JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 # The language environment in which Hadoop runs. Use the English
 # environment to ensure that logs are printed as expected.
 ```
-![Hadoop 8](https://github.com/IliesChibane/Projet-IoT-Cloud-BigData/assets/144664907/1a198cd3-a65c-4eb2-bb88-c6db87516932)
+
 
 **Étape 6 :** Configuration du système de fichiers HDFS
 Configurez le système de fichiers HDFS en modifiant les fichiers de configuration de Hadoop, notamment `core-site.xml`.
