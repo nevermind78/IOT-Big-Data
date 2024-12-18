@@ -240,7 +240,7 @@ a. Vérifier si le serveur SSH est installé
 
     Assurez-vous que le serveur SSH est installé :
 
-```sudo apt-get install openssh-server``
+```sudo apt-get install openssh-server```
 
 Ensuite, démarrez le service :
 
@@ -250,7 +250,7 @@ b. Configurer l'authentification sans mot de passe
 
     Générez une clé SSH si ce n'est pas déjà fait :
 
-``ssh-keygen -t rsa -P "" -f ~/.ssh/id_rsa``
+```ssh-keygen -t rsa -P "" -f ~/.ssh/id_rsa```
 
 Ajoutez la clé publique à la liste des hôtes autorisés :
 
