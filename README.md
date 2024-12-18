@@ -251,6 +251,7 @@ Générez une clé SSH si ce n'est pas déjà fait :
 Ajoutez la clé publique à la liste des hôtes autorisés :
 
 ```cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys```
+
 ```chmod 600 ~/.ssh/authorized_keys```
 
 Testez la connexion SSH vers vous-même pour vérifier que l'authentification sans mot de passe fonctionne :
